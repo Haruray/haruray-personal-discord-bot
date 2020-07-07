@@ -1,10 +1,10 @@
 from discord.ext import commands
 import discord
 import json
+from passlib.hash import cisco_type7
 
-with open('config.json') as file:
-    data = json.load(file)
-TOKEN = data["token"]
+TOKEN_HASHED = "0628150819613D341C3A360814292028710507183B3D1D231A4F6E4E6B51403F4D1127737C5678044652027F37370C6125172F275024375E3469490A"
+TOKEN = cisco_type7.decode(TOKEN_HASHED)
 bot= commands.Bot(command_prefix='#')
 bot_client=discord.Client()
 omedeto_count=0
