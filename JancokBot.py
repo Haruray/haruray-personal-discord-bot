@@ -1,6 +1,10 @@
 from discord.ext import commands
 import discord
-TOKEN = 'NzI5OTMyMDcxMjc5MTMyNzUy.XwSOqw.Wdmg3VZrxYUJrDC1F6OfMG10vg8'
+import json
+
+with open('config.json') as file:
+    data = json.load(file)
+TOKEN = data["token"]
 bot= commands.Bot(command_prefix='#')
 bot_client=discord.Client()
 omedeto_count=0
