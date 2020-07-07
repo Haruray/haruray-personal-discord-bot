@@ -1,1 +1,1 @@
-worker node JancokBot.py
+worker: python bot.py
