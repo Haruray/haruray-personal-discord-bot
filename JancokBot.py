@@ -1,6 +1,6 @@
 from discord.ext import commands
 import discord
-TOKEN = 'NzI5OTMyMDcxMjc5MTMyNzUy.XwQObg.8l79CjTsScWr2t35-hZJsgSCfYU'
+TOKEN = 'NzI5OTMyMDcxMjc5MTMyNzUy.XwSOqw.Wdmg3VZrxYUJrDC1F6OfMG10vg8'
 bot= commands.Bot(command_prefix='#')
 bot_client=discord.Client()
 omedeto_count=0
